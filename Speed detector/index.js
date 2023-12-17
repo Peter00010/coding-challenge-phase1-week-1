@@ -1,3 +1,4 @@
+//Check speed function which uses if and else conditionals to evaluate data.
 function checkSpeed(speed) {
   if (speed < 70) {
     alert("Ok.");

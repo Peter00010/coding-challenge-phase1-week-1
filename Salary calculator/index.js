@@ -1,10 +1,13 @@
-//NET SALARY CALCULATOR
-let netSalary = [
-    {basicSalary: 10000},
-    {benefits: 25000},
-    {nssfDeductions: 100},
-    {nhifDeductions: 100 },
-    {tax: 100},
-]
-netSalary = (basicSalary+ benefits) - (nssfDeductions + nhifDeductions + tax);
-console.log(netSalary);
+let basicSalary = parseFloat(prompt("Enter your basic salary"));
+let benefits = parseFloat(prompt("Enter benefits"));
+let payeeRate = 0.3;
+let nhifRate = 0.015;
+let nssfRate = 0.06;
+
+let payee = basicSalary * payeeRate;
+let nhifDeductions = basicSalary * nhifRate;
+let nssfDeductions = basicSalary * nssfRate;
+let grossSalary = basicSalary + benefits;
+let netSalary = grossSalary - (payee + nhifDeductions + nssfDeductions);
+
+document.write("Your net salary is  " + netSalary);
