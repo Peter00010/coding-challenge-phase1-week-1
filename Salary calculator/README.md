@@ -1,15 +1,40 @@
-# Challenge 3: Net Salary Calculator (Toy Problem)
+# Student Grade Generator
 
-Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIF Deductions, NSSF Deductions, gross salary, and net salary. 
+## Overview
 
-NB: Use KRA, NHIF, and NSSF values provided in the link below.
+The Student Grade Generator is a simple JavaScript program designed to assess and categorize student performance based on input marks. This program offers a quick and straightforward way to determine the corresponding grade for a given set of marks.
 
-- https://www.aren.co.ke/payroll/taxrates.htm Links to an external site.
+## Usage
 
-Links to an external site.-  Links to an external site.Links to an external site.
+1. **Input Marks:** The user is prompted to input the student's marks. The input should be a numeric value between 0 and 100.
 
-- www.kra.go.ke/en/individual/calculate-tax/calculating-tax/payeLinks to an external site.
+    ```javascript
+    // Example: User input marks
+    let marks = 45;
+    ```
 
-This program prompts the user to input their basic salary snd benefits. IT goes on and calculates tax,nhif deductions and nssf deductions adn then returns the net salary to the user.
+2. **Output Grades:**
+   - Grade A: Marks greater than or equal to 80.
+   - Grade B: Marks between 60 and 79.
+   - Grade C: Marks between 49 and 59.
+   - Grade D: Marks between 40 and 49.
+   - Grade E: Marks less than 40.
 
---A practical program to simplify the task of determining net income.
+    ```javascript
+    // Example: Output grade based on input marks
+    if (marks >= 80) {
+      console.log("A");
+    } else if (marks >= 60 && marks < 80) {
+      console.log("B");
+    } else if (marks >= 49 && marks < 60) {
+      console.log("C");
+    } else if (marks >= 40 && marks < 49) {
+      console.log("D");
+    } else {
+      console.log("E");
+    }
+    ```
+
+## License
+
+Feel free to use, modify, and distribute this code for educational and non-commercial purposes.

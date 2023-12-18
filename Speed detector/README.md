@@ -1,10 +1,40 @@
-# Challenge 2: Speed Detector (Toy Problem)
+# Speed Detector
 
-Write a program that takes the speed of a car as input e.g 80. If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
+## Overview
 
-For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.        
+The Speed Detector is a simple JavaScript program designed to monitor vehicle speeds and provide real-time feedback to drivers. This program takes the speed of a car as input and assesses whether the driver is within the speed limit or if demerit points should be assigned.
 
-This program uses IF statement to allow for different conditions to be checked. It(mine) uses alerts (not console.log) to display the output.
-I really hope everything's clear. If not, please tell me. I will be glad to share with you.
+## Usage
 
---A simple tool for monitoring vehicle speeds.
+1. **Input Speed:** The user is prompted to input the speed of the car. The input should be a numeric value representing the speed in km/h.
+
+    ```javascript
+    // Example: User input speed
+    let speed = 80;
+    ```
+
+2. **Output Results:**
+   - If the speed is less than 70 km/h, it displays "Ok," indicating the driver is within the speed limit.
+   - For speeds exceeding 70 km/h, the program calculates demerit points: one point for every 5 km/h over the limit.
+   - The total demerit points are then displayed as "Points: X."
+
+    ```javascript
+    // Example: Output demerit points based on input speed
+    if (speed < 70) {
+      alert("Ok");
+    } else {
+      let demeritPoints = Math.floor((speed - 70) / 5);
+      alert("Points: " + demeritPoints);
+      
+      if (demeritPoints > 12) {
+        alert("License suspended");
+      }
+    }
+    ```
+
+## License
+
+
+Feel free to use, modify, and distribute this code for educational and non-commercial purposes. If you have any questions or suggestions, please open an issue.
+
+Enjoy monitoring vehicle speeds with the Speed Detector!
