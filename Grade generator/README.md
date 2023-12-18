@@ -4,5 +4,4 @@ Write a function that prompts the user to input student marks. The input should 
 
         A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
 
-This is directed to test conditional statements. 
-(use of if and if else)
+--A program to offer quick way to assess and categorize student performance.

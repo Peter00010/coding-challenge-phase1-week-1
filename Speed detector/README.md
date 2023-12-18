@@ -6,3 +6,5 @@ For example, if the speed is 80, it should print: “Points: 2”. If the driver
 
 This program uses IF statement to allow for different conditions to be checked. It(mine) uses alerts (not console.log) to display the output.
 I really hope everything's clear. If not, please tell me. I will be glad to share with you.
+
+--A simple tool for monitoring vehicle speeds.
