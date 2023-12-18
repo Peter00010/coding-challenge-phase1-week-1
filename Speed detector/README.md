@@ -2,11 +2,11 @@
 
 ## Overview
 
-The Speed Detector is a simple JavaScript program designed to monitor vehicle speeds and provide real-time feedback to drivers. This program takes the speed of a car as input and assesses whether the driver is within the speed limit or if demerit points should be assigned.
+The Speed Detector is a JavaScript program designed to monitor vehicle speeds and provide real-time feedback to drivers. This program takes the speed of a car as input and assesses whether the driver is within the speed limit or if demerit points should be assigned.
 
 ## Usage
 
-1. **Input Speed:** The user is prompted to input the speed of the car. The input should be a numeric value representing the speed in km/h.
+1. **Input Speed:** Prompt the user to input the speed of the car. The input should be a numeric value representing the speed in km/h.
 
     ```javascript
     // Example: User input speed
@@ -32,9 +32,7 @@ The Speed Detector is a simple JavaScript program designed to monitor vehicle sp
     }
     ```
 
-## License
+## Author and License
 
-
-Feel free to use, modify, and distribute this code for educational and non-commercial purposes. If you have any questions or suggestions, please open an issue.
-
-Enjoy monitoring vehicle speeds with the Speed Detector!
+Authored by Peter Mwongela.
+All rights reserved.
